@@ -1,4 +1,3 @@
-
 span {
   display: inline-block;
   width: fit-content;
@@ -109,7 +108,7 @@ a.logo:hover{
 .flex-left {
   justify-content: flex-start;
 }
-.padside1{
+.padside1 {
   padding: 0 2%;
 }
 .bggray{
