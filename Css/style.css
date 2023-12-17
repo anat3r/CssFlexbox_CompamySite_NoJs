@@ -15,11 +15,43 @@
 .header-logo{
   width: 150px;
 }
-.nav-right {
-  width: 100%;
-  justify-content: right;
-  min-width: 480px;
-  margin-right: 4vw;
+@media screen and (min-width: 1px){
+  ul.nav-right {
+    display: none;
+  }
+  .dropdown
+  {
+    display: flex;
+  }
+  div.nav-right{
+    display: flex;
+     width: 100%;
+    justify-content: right;
+    min-width: 480px;
+    margin-right: 4vw;
+  }
+    .dropdown img:hover{
+      color: white;
+      background-color: black;
+    }
+}
+@media screen and (min-width: 800px) {
+ul.nav-right {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    min-width: 480px;
+    margin-right: 4vw;
+  }
+  div.nav-right {
+    display: none;
+  }
+  .dropdown {
+  display: none;
+  }
+  .dropdown *{
+    display: none;
+  }
 }
 .nav-item{
   display: block;
@@ -27,7 +59,7 @@
   width: fit-content;
 }
 .flex-col{
-    display: flex;
+    display: flexbox;
     gap: 30px;
     flex-direction: column;
     justify-content: center;
@@ -74,17 +106,39 @@ a.logo:hover{
 #first-sec img{
   float: right;
 }
-.font-size-giant {
-  font-size: 64px;
+@media screen and (min-width:1px) {
+  .font-size-giant {
+      font-size: 32px;
+    }
+  
+    .font-size-large {
+      font-size: 20px;
+    }
+  
+    .font-size-medium {
+      font-size: 16px;
+    }
+  
+    .font-size-small {
+      font-size: 12px;
+    }
 }
-.font-size-large{
-  font-size: 36px;
-}
-.font-size-medium {
-  font-size: 22px;
-}
-.font-size-small {
-  font-size: 16px;
+@media screen and (min-width:800px) {
+  .font-size-giant {
+    font-size: 64px;
+  }
+
+  .font-size-large {
+    font-size: 36px;
+  }
+
+  .font-size-medium {
+    font-size: 22px;
+  }
+
+  .font-size-small {
+    font-size: 16px;
+  }
 }
 .round5{
   border-radius: 4%;
@@ -110,21 +164,29 @@ a.logo:hover{
   background-color: gray;
 }
 @media screen and (min-width: 1px) {
-  .row3img {
+  .flex-col {
       width: 100%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1679px) {
-  .row3img {
+  .flex-col{
     width: 100%;
   }
 }
 .marginside-auto{
   margin: 0 auto !important;
 }
-.fluid{
-  width:30%;
-  min-width: 200px;
+@media screen and (min-width: 1px) {
+  .fluid {
+    width: 33%;
+    justify-content: center !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .fluid {
+    width: 33%;
+    max-width: 200px;
+  }
 }
 .nowrap {
   flex-wrap: nowrap !important;
@@ -145,7 +207,19 @@ a.logo:hover{
     border-bottom-left-radius: 5% ;
     overflow: clip;
 }
-.bigblock-text{
-  padding: 80px 60px;
-  flex-shrink: 2;
+.product.bigblock-text{
+  padding: 12% 8%;
+  flex: 1 2;
+}
+.bigblock-text {
+  flex: 1 2;
+}
+
+.bigblock-image{
+  flex: 2 0;
+  min-width: 200px;
+}
+#aboutfluid1, #aboutfluid3 {
+  height: 150px;
+  margin: auto 0px;
 }
