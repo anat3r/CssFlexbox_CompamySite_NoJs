@@ -71,7 +71,8 @@ header,
 hgroup,
 menu,
 nav,
-output ruby,
+output
+ruby,
 section,
 summary,
 time,
@@ -84,21 +85,17 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
-
-main {
+main{
   display: block;
 }
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body, h1, h2, h3, h4, h5, h6{
   font-family: Helvetica, Arial, sans-serif;
 }
-
 p {
   font-family: Garamond, serif;
+}
+span {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }
