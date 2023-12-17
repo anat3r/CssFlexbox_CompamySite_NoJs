@@ -126,9 +126,6 @@ a.logo:hover{
 .flex-left {
   justify-content: flex-start;
 }
-.padside1{
-  padding: 0 2%;
-}
 .bggray{
   background-color: gray;
 }
