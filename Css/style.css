@@ -19,21 +19,6 @@
   ul.nav-right {
     display: none;
   }
-  .dropdown
-  {
-    display: flex;
-  }
-  div.nav-right{
-    display: flex;
-     width: 100%;
-    justify-content: right;
-    min-width: 480px;
-    margin-right: 4vw;
-  }
-    .dropdown img:hover{
-      color: white;
-      background-color: black;
-    }
 }
 @media screen and (min-width: 800px) {
 ul.nav-right {
@@ -42,15 +27,6 @@ ul.nav-right {
     justify-content: right;
     min-width: 480px;
     margin-right: 4vw;
-  }
-  div.nav-right {
-    display: none;
-  }
-  .dropdown {
-  display: none;
-  }
-  .dropdown *{
-    display: none;
   }
 }
 .nav-item{
