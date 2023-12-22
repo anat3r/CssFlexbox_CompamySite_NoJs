@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <nav id="nav-main" class="flex-container nowrap">
+    <nav id="nav-main" class="topnav flex-container nowrap">
       <div class="nav-left">
         <a class="nav-item logo font-size-medium" target="_blank">
           <svg  width="104" height="48">
@@ -44,7 +44,7 @@
           </svg>
         </a>
       </div>
-      <ul class="flex-container nav-right">
+      <ul id="nav-main-list" class="flex-container nav-right">
         <li class="nav-item font-size-medium">
           <a href="#about" class="nav-text">About</a>
         </li>
@@ -58,6 +58,7 @@
           <a href="#" class="nav-text">Resourses</a>
         </li>
       </ul>
+      
     </nav>
   </header>
   <main>
@@ -114,5 +115,15 @@
   <footer>
 
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav-main");
+      if (x.className === "topnav flex-container nowrap") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav flex-container nowrap";
+      }
+    }
+  </script>
 </body>
 </html>
