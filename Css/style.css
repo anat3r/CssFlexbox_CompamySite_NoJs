@@ -3,7 +3,7 @@
   border: 200px ;
   border-color: black t;
 }
-section:not(div){
+section:not(div){ 
   background-color: rgba(200, 200, 200, 0.05);
 }
 section > div{
