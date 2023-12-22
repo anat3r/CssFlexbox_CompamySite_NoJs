@@ -12,21 +12,50 @@
     <nav id="nav-main" class="flex-container nowrap">
       <div class="nav-left">
         <a class="nav-item logo font-size-medium" target="_blank">
-          <img class="header-logo" src="#" alt="_BlankComp" height="40" width="120">
+          <svg  width="104" height="48">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fff;
+                  stroke-width: 3px;
+                }
+          
+                .cls-1,
+                .cls-2 {
+                  stroke: #000;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+            </defs>
+            <g id="Слой_2" data-name="Слой 2">
+              <g id="Слой_4" data-name="Слой 4">
+                <rect class="cls-1" x="1.5" y="1.5" width="101.35" height="44.61" />
+                <polygon class="cls-2" points="31.94 9.09 31.94 9.1 9.75 9.1 31.94 9.09" />
+                <path class="cls-2"
+                  d="M63.32,39.23v6.65H55.13c-10.8-.08-16.1-3-16.19-13.81V20.54H31V12.75h7.94v-10h8.44v10H62.07v7.79H47.38V31.25C47.08,40,56.84,39.23,63.32,39.23Z" />
+                <polygon class="cls-2"
+                  points="62.04 1.5 62.04 9.09 31.94 9.09 9.75 9.1 9.75 21.69 25.78 21.69 25.78 29.35 9.75 29.35 9.75 46.11 1.5 46.11 1.5 1.5 62.04 1.5" />
+                <polygon class="cls-2" points="102.78 39.23 102.85 46.11 33.1 46.11 33.03 39.23 102.78 39.23" />
+                <path class="cls-2"
+                  d="M98.83,25.6v7.06H91.05V25.6S91,20,86,20c-5.11.16-5.11,5.6-5.11,5.6V39.16H88.6v7H65.41v-7h7V20H66.66V12.75H80.85c.49,0,8.25,0,10.2,0C98.83,12.93,98.83,21.36,98.83,25.6Z" />
+                <polygon class="cls-2" points="43.02 39.07 43.05 46.11 1.5 46.11 1.5 39.23 43.02 39.07" />
+              </g>
+            </g>
+          </svg>
         </a>
       </div>
       <ul class="flex-container nav-right">
         <li class="nav-item font-size-medium">
-          <a href="#about">About</a>
+          <a href="#about" class="nav-text">About</a>
         </li>
         <li class="nav-item font-size-medium">
-          <a href="#products">Products</a>
+          <a href="#products" class="nav-text">Products</a>
         </li >
         <li class="nav-item font-size-medium">
-          <a href="#">Join us</a>
+          <a href="#" class="nav-text">Join us</a>
         </li>
         <li class="nav-item font-size-medium">
-          <a href="#">Resourses</a>
+          <a href="#" class="nav-text">Resourses</a>
         </li>
       </ul>
     </nav>
@@ -46,7 +75,7 @@
       </div>
     </section>
     <section id="products">
-      <div class="width80 padtop30 text-center flex-center marginside-auto">
+      <div class="width80 padtop30 flex-center marginside-auto">
         <h1 class="font-size-giant balance-text">We are everywere</h1>
       </div>
       <div class="flex-container flex-center flexgap width80 padtop30">
@@ -63,13 +92,14 @@
           <h2 class="font-size-medium text-center">Our product with anything</h2>
         </div>
       </div>
-      <div class="flex-container width80 round-container5 bggray">
+      <div class="width80 padtop30 flex-center"><div class="flex-container round-container5 bggray">
         <div class="product flex-col bigblock-text">
           <span>
             <h1 class="font-size-large">Out products are better, that everything you can find</h1>
           </span>
         </div>
-        <img class="round5 bigblock-image" src="Images/181-200x200-blur_3.jpg" alt="Product3">
+        <div class="round5 bigblock-image"><img id="product-img" src="Images/product.png" alt="Product3"></div>
+        
       </div>
     </section>
 <!--     <section id="join-us">
