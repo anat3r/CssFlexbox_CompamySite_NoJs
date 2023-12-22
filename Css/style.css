@@ -1,11 +1,20 @@
-#nav-main{
+:root {
+  --1p-h: 800;
+  --1p-w: 600;
+  --2p-h: 960;
+  --2p-w: 600;
+  --3p-h: 427;
+  --3p-w: 600;
+}
+#nav-main {
   margin-top: 16px;
   border: 200px ;
   border-color: black t;
 }
 #nav-main .nav-left{
   flex: 1 4;
-} #nav-main .nav-right {
+} 
+#nav-main .nav-right {
   flex: 4 1;
 }
 section:not(div){ 
@@ -29,22 +38,55 @@ section > div{
 .header-logo{
   width: 150px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
 ul#nav-main-list {
     display: flex;
     width: 100%;
     justify-content: right;
-    min-width: 480px;
     margin-right: 4vw;
   }
 }
-@media screen and (max-width: 800px) {d
+@media screen and (max-width: 600px) {d
   ul#nav-main-list {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    font-size: 1% !important;
   }
 }
+@media screen and (max-width: 600px) {
+  #logo-max {
+      display: none;
+  }
+  #logo-mini {
+    display: none;
+  }
+  #logo-cube {
+    display: block;
+  }
+}
+@media screen and (min-width: 800px){
+  #logo-mini {
+      display: none;
+  }
+  #logo-cube {
+    display: none;
+  }   
+  #logo-max {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px){
+  #logo-max {
+      display: none;
+  }
+  #logo-cube {
+    display: none;
+  }
+  #logo-mini {
+    display: block;
+  }
+}
+
 .nav-item{
   display: block;
   padding: 8px 2vw;
@@ -56,22 +98,18 @@ ul#nav-main-list {
     flex-direction: column;
     justify-content: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .flexgap {
     gap: 30px;
   }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 600px){
   .flexgap {
     gap: 60px;
     flex-wrap: nowrap;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1679px) {
-  .flexgap {
-    flex-wrap: nowrap;
-  }
 } 
 a:hover {
   color: #121212;
@@ -88,8 +126,11 @@ a {
 a.logo:hover{
   text-decoration: none;
 }
-.padtop30{
-    padding: 30px 0px;
+.padtop-auto{
+    padding-top: 20vh;
+}
+.padtop30 {
+  padding: 30px 0px;
 }
 .width80{
   width: 80%;
@@ -97,10 +138,24 @@ a.logo:hover{
   padding-left: 1%;
   margin: 0px 10%;
 }
-#first-sec img{
-  float: right;
+@media screen and (max-width:425px) {
+  .font-size-giant {
+    font-size: 20px;
+  }
+
+  .font-size-large {
+    font-size: 16px;
+  }
+
+  .font-size-medium {
+    font-size: 12px;
+  }
+
+  .font-size-small {
+    font-size: 10px;
+  }
 }
-@media screen and (max-width:800px) {
+@media screen and (min-width:425px) and (max-width:1200px) {
   .font-size-giant {
       font-size: 32px;
     }
@@ -117,7 +172,8 @@ a.logo:hover{
       font-size: 12px;
     }
 }
-@media screen and (min-width:800px) {
+
+@media screen and (min-width:1200px) {
   .font-size-giant {
     font-size: 64px;
   }
@@ -170,17 +226,63 @@ a.logo:hover{
 .marginside-auto{
   margin: 0 auto !important;
 }
-@media screen and (min-width: 1px) {
-  .fluid {
-    width: 33%;
-    justify-content: center !important;
+@media screen and (max-width: 600px) {
+  .fluid {justify-content: center !important;}
+  #aboutfluid1 {
+    height: calc(4vw * var(--1p-h) / 100);
+    max-height: calc(var(--1p-h)/2 * 1px);
+    width: calc(4vw * var(--1p-w) / 100);
+    max-width: calc(var(--1p-w)/2 * 1px);
+    margin: 10% 10px 10%;
+  }
+
+  #aboutfluid2 {
+    height: calc(4vw * var(--2p-h) / 100);
+    max-height: calc(var(--2p-h)/2 * 1px);
+    width: calc(4vw * var(--2p-w) / 100);
+    max-width: calc(var(--2p-w)/2 * 1px);
+    margin: 5% 10px 10%;
+  }
+
+  #aboutfluid3 {
+    height: calc(4vw * var(--3p-h) / 100);
+    max-height: calc(var(--3p-h)/2 * 1px);
+    width: calc(4vw * var(--3p-w) / 100);
+    max-width: calc(var(--3p-w)/2 * 1px);
+    margin: 5% 0px 10%;
   }
 }
-@media screen and (min-width: 800px) {
-  .fluid {
-    width: 33%;
-    max-width: 200px;
-  }
+@media screen and (min-width: 600px) {
+  .fluid .flex-right {justify-content: right !important;}
+    #aboutfluid1 {
+      height: calc(2vw * var(--1p-h) / 100);
+      max-height: calc(var(--1p-h)/2 * 1px);
+      min-height: calc(var(--1p-h)/10 * 1px);
+      width: calc(2vw * var(--1p-w) / 100);
+      max-width: calc(var(--1p-w)/2 * 1px);
+      min-width: calc(var(--1p-w)/10 *1px);
+      margin: 5% 0px 10%;
+    }
+  
+    #aboutfluid2 {
+      height: calc(2vw * var(--2p-h) / 100);
+      max-height: calc(var(--2p-h)/2 * 1px);
+      min-height: calc(var(--2p-h)/10 * 1px);
+      width: calc(2vw * var(--2p-w) / 100);
+      max-width: calc(var(--2p-w)/2 * 1px);
+      min-width: calc(var(--2p-w)/10 *1px);
+      margin: 5% 10px 10%;
+    }
+  
+    #aboutfluid3 {
+      height: calc(2vw * var(--3p-h) / 100);
+      max-height: calc(var(--3p-h)/2 * 1px);
+      min-height: calc(var(--3p-h)/10 * 1px);
+      width: calc(2vw * var(--3p-w) / 100);
+      max-width: calc(var(--3p-w)/2 * 1px);
+      min-width: calc(var(--3p-w)/10 *1px);
+      margin: 10% 0px 20%;
+    }
 }
 .nowrap {
   flex-wrap: nowrap !important;
@@ -196,25 +298,43 @@ a.logo:hover{
 }
 .product.bigblock-text{
   padding: 12% 8%;
-  flex: 1 2;
-}
-.bigblock-text {
-  flex: 1 2;
 }
 
 .bigblock-image{
-  flex: 2 0;
-  min-width: 200px;
+  min-width: 290px;
   justify-content: center;
   display: flex;
 }
-#aboutfluid1, #aboutfluid3 {
-  height: 150px;
-  margin: auto 0px;
+#nav-main {
+  margin-top: 16px;
+  border: 200px;
+  border-color: black t;
+}
+#first-sec img {
+  float: right;
 }
 #product-img{
   max-width: 90%;
   max-height: 90%;
   margin: auto;
   margin-left: 0px;
+}
+.flex-12{
+  flex: 1 2;
+}
+.flex-21{
+  flex: 2 1;
+}
+.flex-13 {
+  flex: 1 3;
+}
+.flex-31 {
+  flex: 3 1;
+}
+.flex-14 {
+  flex: 1 4;
+}
+
+.flex-41 {
+  flex: 4 1;
 }
