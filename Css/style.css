@@ -144,11 +144,23 @@ a.logo:hover{
 .padtop30 {
   padding-top: 30px;
 }
-.width80{
-  width: 80%;
-  padding-right: 1%;
-  padding-left: 1%;
-  margin: 0px 10%;
+@media screen and (max-width:1480px){
+  .centered {
+    width: 80vw;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width:1480px) {
+  .centered {
+    width: 60vw;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width:425px) {
   .font-size-giant {
@@ -207,6 +219,27 @@ a.logo:hover{
   .font-size-smallest {
     font-size: 12px;
   }  
+}
+@media screen and (min-width:1480px) {
+  .font-size-giant {
+    font-size: 2.5vw;
+  }
+
+  .font-size-large {
+    font-size: 1.5vw;
+  }
+
+  .font-size-medium {
+    font-size: 1.2vw;
+  }
+
+  .font-size-small {
+    font-size: 0.8vw;
+  }
+
+  .font-size-smallest {
+    font-size: 0.6vw;
+  }
 }
 .round5{
   border-radius: 4%;
@@ -368,4 +401,16 @@ a.logo:hover{
 }
 .padbot30 {
   padding-bottom: 30px;
+}
+footer a:hover{
+  color: lightgray;
+}
+footer a:hover *{
+  color: lightgray;
+}
+footer a:active {
+  color: gray;
+}
+footer a:active *{
+  color: gray;
 }
