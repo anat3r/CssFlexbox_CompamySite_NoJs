@@ -23,6 +23,16 @@ section:not(div){
 section > div{
   background-color: white;
 }
+footer{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white !important;
+}
+.clr-white{
+  color: white;
+}
+.text-left{
+  text-align: left;
+}
 .flex-container {
   display: -webkit-flex;
   flex-wrap: wrap;
@@ -110,7 +120,6 @@ ul#nav-main-list {
     flex-wrap: nowrap;
   }
 }
-} 
 a:hover {
   color: #121212;
   text-decoration: underline;
@@ -126,11 +135,14 @@ a {
 a.logo:hover{
   text-decoration: none;
 }
-.padtop-auto{
-    padding-top: 20vh;
+.padtop60{
+  padding-top: 60px;
+}
+.padbot60 {
+  padding-bottom: 60px;
 }
 .padtop30 {
-  padding: 30px 0px;
+  padding-top: 30px;
 }
 .width80{
   width: 80%;
@@ -157,20 +169,23 @@ a.logo:hover{
 }
 @media screen and (min-width:425px) and (max-width:1200px) {
   .font-size-giant {
-      font-size: 32px;
-    }
+    font-size: 32px;
+  }
   
-    .font-size-large {
-      font-size: 20px;
-    }
+  .font-size-large {
+    font-size: 20px;
+  }
   
-    .font-size-medium {
-      font-size: 16px;
-    }
+  .font-size-medium {
+    font-size: 16px;
+  }
   
-    .font-size-small {
-      font-size: 12px;
-    }
+  .font-size-small {
+    font-size: 12px;
+  }
+  .font-size-smallest {
+    font-size: 10px;
+  }    
 }
 
 @media screen and (min-width:1200px) {
@@ -189,6 +204,9 @@ a.logo:hover{
   .font-size-small {
     font-size: 16px;
   }
+  .font-size-smallest {
+    font-size: 12px;
+  }  
 }
 .round5{
   border-radius: 4%;
@@ -224,7 +242,8 @@ a.logo:hover{
   }
 }
 .marginside-auto{
-  margin: 0 auto !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 @media screen and (max-width: 600px) {
   .fluid {justify-content: center !important;}
@@ -292,6 +311,7 @@ a.logo:hover{
 }
 .flex-item-auto{
   width: 100%;
+  text-align: center;
 }
 .round-container5{
   border-radius: 25px;
@@ -337,4 +357,15 @@ a.logo:hover{
 
 .flex-41 {
   flex: 4 1;
+}
+.padtb6{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.padtb4 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.padbot30 {
+  padding-bottom: 30px;
 }

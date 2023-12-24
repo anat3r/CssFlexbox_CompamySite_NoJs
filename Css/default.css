@@ -86,11 +86,22 @@ video {
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.9);
 }
+ul{
+  list-style-type: none;
+}
+ol{
+  list-style-type:decimal;
+}
 main{
   display: block;
 }
 body, h1, h2, h3, h4, h5, h6{
   font-family: Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3{
+  font-weight: bold;
 }
 p {
   font-family: Garamond, serif;
