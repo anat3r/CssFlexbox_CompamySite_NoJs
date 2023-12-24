@@ -164,7 +164,7 @@ a.logo:hover{
 }
 @media screen and (min-width:2600px) {
   .centered {
-    width: 1800px;
+    width: 2000px;
     padding-right: 3%;
     padding-left: 3%;
     margin-left: auto;
