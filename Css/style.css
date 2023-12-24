@@ -144,7 +144,7 @@ a.logo:hover{
 .padtop30 {
   padding-top: 30px;
 }
-@media screen and (max-width:1480px){
+@media screen and (max-width:1500px){
   .centered {
     width: 80vw;
     padding-right: 1%;
@@ -153,11 +153,20 @@ a.logo:hover{
     margin-right: auto;
   }
 }
-@media screen and (min-width:1480px) {
+@media screen and (min-width:1500px) and (max-width:2600px) {
   .centered {
-    width: 60vw;
-    padding-right: 1%;
-    padding-left: 1%;
+    width: 70vw;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width:2600px) {
+  .centered {
+    width: 1800px;
+    padding-right: 3%;
+    padding-left: 3%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -200,9 +209,9 @@ a.logo:hover{
   }    
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) and (max-width:1500px){
   .font-size-giant {
-    font-size: 64px;
+    font-size: 42px;
   }
 
   .font-size-large {
@@ -210,19 +219,40 @@ a.logo:hover{
   }
 
   .font-size-medium {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .font-size-small {
-    font-size: 16px;
+    font-size: 18px;
   }
   .font-size-smallest {
-    font-size: 12px;
+    font-size: 14px;
   }  
 }
-@media screen and (min-width:1480px) {
+@media screen and (min-width:1500px) and (max-width:2600px) {
   .font-size-giant {
-    font-size: 2.5vw;
+    font-size: 3vw;
+  }
+
+  .font-size-large {
+    font-size: 2vw;
+  }
+
+  .font-size-medium {
+    font-size: 1.5vw;
+  }
+
+  .font-size-small {
+    font-size: 1vw;
+  }
+
+  .font-size-smallest {
+    font-size: 0.8vw;
+  }
+}
+@media screen and (min-width:2600px) {
+  .font-size-giant {
+    font-size: 1.8vw;
   }
 
   .font-size-large {
@@ -230,15 +260,15 @@ a.logo:hover{
   }
 
   .font-size-medium {
-    font-size: 1.2vw;
+    font-size: 1vw;
   }
 
   .font-size-small {
-    font-size: 0.8vw;
+    font-size: 0.6vw;
   }
 
   .font-size-smallest {
-    font-size: 0.6vw;
+    font-size: 0.4vw;
   }
 }
 .round5{
